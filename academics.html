@@ -7,6 +7,8 @@
 		<meta name = "author" content = "Cole Rodenberg">
 		<meta name = "description" content = "">
 		<meta name = "keywords" content = ""> 
+		<script src = "js/jquery-3.1.0.min.js"></script>
+		
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
@@ -19,7 +21,7 @@
 				<div class = "nav">
 					<ul id = "menu">
 						<a href = "index.html"><li>Home</li></a>
-						<a><li>Academics</li></a>
+						<a><li class = "active">Academics</li></a>
 						<a href = "code.html"><li>Code</li></a>
 						<a href = "running.html"><li>Running</li></a>
 						<a href = "hobbies.html"><li>Hobbies</li></a>
@@ -31,16 +33,16 @@
 		<div class="portlet">
 			<div class="sidebar">
 				<ul class="nav-side">
-					<a href = "#"><li>Books</li></a>
-					<a href = "#"><li>Courses</li></a>
-					<a href = "#"><li>Jobs</li></a>
+					<a href = "javascript:Academics.SetTab('Books');"><li id = "liBooks" class = "active">Books</li></a>
+					<a href = "javascript:Academics.SetTab('Classes');" ><li id = "liClasses">Courses</li></a>
+					<a href = "javascript:Academics.SetTab('Jobs');" ><li id = "liJobs">Jobs</li></a>
 				</ul>
 			</div>
 		</div>
 
 		<div class ="container">
 			<div class="content">
-				<div class="books">
+				<div class="books" id = "divBooks">
 					<h1>Recent Books Read</h1>
 					<div class="book" id = "book1">
 						<img src = "img/Steve_Jobs.jpg" alt = "Steve Jobs by Walter Isaacson"/>
@@ -70,9 +72,7 @@
 						<img src = "img/JavascriptandJquery.png" alt = "JavaScript and jQuery by Jon Duckett"/>
 					</div>
 				</div>
-				<div class="h_line">
-				</div>
-				<div class="class-section">
+				<div class="class-section" id = "divClasses">
 					<h1>My Computer Science and Mathematics Courses</h1>
 					<div class="section1">
 						<div class="course">
@@ -114,9 +114,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="h_line">
-				</div>
-				<div class="internship-section">
+				<div class="internship-section" id = "divJobs">
 					<h1>My Past Internships and Jobs</h1>
 					<!-- Summer Internship 2015-->
 					<div class="intern-header">
@@ -294,9 +292,10 @@
 		</div>
 		<div class = "footer">
 			<div style = "font-size: 17px; text-align: center;" class = "container">
-				Copyright @ RodeyTech.com
+				Copyright @ ColeRodenberg.com 2016
 			</div>
 		</div>
+		<script src = "js/academics.js"></script>
 	</body>
 
 

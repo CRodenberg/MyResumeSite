@@ -57,6 +57,9 @@ p{
 .profile-contents ul li{
 	text-decoration: none;
 }
+#divCollege{
+	display: none;
+}
 .running-profile{
 	padding-top: 30px;
 	width: 100%;
@@ -124,6 +127,10 @@ p{
 	height:5px; 
 	background: black; 
 }
+
+#divClasses{
+	display:none;
+}
 .class-section{
 	float:left;
 	padding-top: 15px;
@@ -156,6 +163,9 @@ p{
 	float:left;
 	width:45%;
 	padding-left:20px;
+}
+#divJobs{
+	display:none;
 }
 .internship-section{
 	float:left;
@@ -337,6 +347,11 @@ iframe{
 	background-color: white;
 	border-color: white;
 }
+.active{
+	background-color: white !important;
+	color: black !important;
+	border-color: yellow;
+}
 .header{
 	background: #029fff;
 	width: 100%;
@@ -366,6 +381,7 @@ iframe{
 .content{
 	padding-top:70px;
 	padding-bottom: 50px;
+	min-height: 150px;
 }
 #menu{
 	float: right;
