@@ -7,7 +7,7 @@
 		<meta name = "author" content = "Cole Rodenberg">
 		<meta name = "description" content = "">
 		<meta name = "keywords" content = ""> 
-		<script src="jquery-3.1.0.min.js"></script>
+		<script src="js/jquery-3.1.0.min.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
@@ -32,19 +32,18 @@
 		<div class="portlet">
 			<div class="sidebar">
 				<ul class="nav-side">
-					<a href = "#"><li>Reading</li></a>
-					
-					<a href = "#"><li>Running</li></a>
-					<a href = "#"><li>Sports</li></a>
-					<a href = "#"><li>Gaming</li></a>
-					<a href = "#"><li>Movies</li></a>
+					<a href = "javascript:Hobbies.SetTab('Books');"><li class = "active" id = "liBooks">Reading</li></a>
+					<a href = "javascript:Hobbies.SetTab('Running');"><li id = "liRunning">Running</li></a>
+					<a href = "javascript:Hobbies.SetTab('Sports');"><li id = "liSports">Sports</li></a>
+					<a href = "javascript:Hobbies.SetTab('Gaming');"><li id = "liGaming">Gaming</li></a>
+					<a href = "javascript:Hobbies.SetTab('Movies');"><li id = "liMovies">Movies</li></a>
 				</ul>
 			</div>
 		</div>
 
 		<div class ="container">
 			<div id = "Home" class="content">
-				<div class="books">
+				<div class="books" id = "divBooks">
 					<h1>Book Series</h1>
 					<h3>Summary</h3>
 					<p>
@@ -82,9 +81,7 @@
 						<img src = "img/pendragon.jpg" alt = "Pendragon Series"/>
 					</div>
 				</div>
-				<div class="h_line">
-				</div>
-				<div class="books">
+				<div class="books" id = "divRunning">
 					<h1>Running</h1>
 					<h3>Summary</h3>
 					<p>
@@ -98,13 +95,11 @@
 					</p>
 					<h3>More Running</h3>
 					<p>
-						Check out more of my running on my Running page!
+						<a href = "running.html"><span id = "spnRun">Click Here to check out more of my running on my Running page!</span></a>
 					</p>
 
 				</div>
-				<div class="h_line">
-				</div>
-				<div class="books">
+				<div class="books" id = "divSports">
 					<h1>Sports</h1>
 					<h3>Summary</h3>
 					<p>
@@ -133,9 +128,7 @@
 						<img src = "img/grizzlies.png" alt = "Memphis Grizzlies"/>
 					</div>
 				</div>
-				<div class="h_line">
-				</div>
-				<div class="books">
+				<div class="books" id = "divGaming">
 					<h1>Gaming</h1>
 					<h3>Summary</h3>
 					<p>
@@ -160,15 +153,16 @@
 						<img src = "img/clashroyale.jpg" alt = "Clash Royale"/>
 					</div>
 					<div class="book">
-						<img src = "img/nba.jpg" alt = "Indianapolis Colts"/>
+						<img src = "img/nba.jpg" alt = "NBA 2K16"/>
 					</div>
 					<div class="book">
-						<img src = "img/GTA5.png" alt = "Indianapolis Colts"/>
+						<img src = "img/GTA5.png" alt = "Grand Theft Auto 5"/>
+					</div>
+					<div class="book">
+						<img src = "img/Halo.jpg" alt = "Halo Reach"/>
 					</div>
 				</div>
-				<div class="h_line">
-				</div>
-				<div class="books">
+				<div class="books" id = "divMovies">
 					<h1>Movies</h1>
 					<h3>Summary</h3>
 					<p>
@@ -225,11 +219,15 @@
 					</ul>
 				</div>
 				<div class ="prefooter">
-					<h2>Share Contact</h2>
+					<!-- <h2>Share Contact</h2>
 					<input type="text" placeholder="mail@email.com" class="form-control">
 					<span class="input-group-btn">
                         <button class="btn" type="submit">Submit</button>
-                    </span>
+                    </span> -->
+                    <h2>My Code</h2>
+                    <a href = "https://github.com/CRodenberg">
+						<img src = "img/giticon.png" alt = "GitHub logo">
+					</a>
 				</div>
 				<div class ="prefooter">
 					<h2>Follow Me On</h2>
@@ -266,6 +264,7 @@
 				Copyright @ ColeRodenberg.com 2016
 			</div>
 		</div>
+		<script src = "js/hobbies.js"></script>
 	</body>
 
 

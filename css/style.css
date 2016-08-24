@@ -60,6 +60,21 @@ p{
 #divCollege{
 	display: none;
 }
+#divRunning{
+	display: none;
+}
+#divGaming{
+	display: none;
+}
+#divSports{
+	display: none;
+}
+#divMovies{
+	display: none;
+}
+#spnRun{
+	color: #009bff;
+}
 .running-profile{
 	padding-top: 30px;
 	width: 100%;
@@ -373,7 +388,6 @@ iframe{
 .logo h1{
 	text-shadow: 3px 3px 5px black;
 }
-
 .nav{
 	float: right;
 	font-size: 17px;
@@ -462,7 +476,7 @@ textarea{
 	color: white;
 	padding: 3px;
 }
-.prefooter ul li img{
+.prefooter img{
 	width: 50px;
 	height: 50px;
 }
