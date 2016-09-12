@@ -8,263 +8,267 @@
 		<meta name = "description" content = "">
 		<meta name = "keywords" content = ""> 
 		<script src="js/jquery-3.1.0.min.js"></script>
+		<link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
 		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link rel="stylesheet" type="text/css" media="only screen and (min-width:768px) and
+  			(max-width:980px)" href="css/style_768.css">
+  		<link rel="stylesheet" type="text/css" media="only screen and (min-width:600px) and
+  			(max-width:767px)" href="css/style_600.css">
+  		<link rel="stylesheet" type="text/css" media="only screen and (min-width:300px) and
+  			(max-width:599px)" href="css/style_300.css">
 	</head>
 
 	<body>
-		<div class = "header">
-			<div class="container">
-				<div class="logo">
-					<h1><a id = "logoA" href = "#">Cole Rodenberg</a></h1>
-				</div>
-				<div class = "nav">
-					<ul id = "menu">
-						<a href = "index.html"><li>Home</li></a>
-						<a href = "academics.html"><li>Academics</li></a>
-						<a href = "code.html"><li>Code</li></a>
-						<a href = "running.html"><li>Running</li></a>
-						<a href = "#"><li class = "active">Hobbies</li></a>
-					</ul>
+		<div id="page-wrap">
+			<div class = "header">
+				<div class="container">
+					<div class="logo">
+						<h1><a id = "logoA" href = "#">Cole Rodenberg</a></h1>
+					</div>
+					<div class = "nav">
+						<ul id = "menu">
+							<a href = "index.html"><li>Home</li></a>
+							<a href = "academics.html"><li>Academics</li></a>
+							<a href = "code.html"><li>Code</li></a>
+							<a href = "running.html"><li>Running</li></a>
+							<a href = "#"><li class = "active">Hobbies</li></a>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</div>
 
-		<div class="portlet">
-			<div class="sidebar">
-				<ul class="nav-side">
-					<a href = "javascript:Hobbies.SetTab('Books');"><li class = "active" id = "liBooks">Reading</li></a>
-					<a href = "javascript:Hobbies.SetTab('Running');"><li id = "liRunning">Running</li></a>
-					<a href = "javascript:Hobbies.SetTab('Sports');"><li id = "liSports">Sports</li></a>
-					<a href = "javascript:Hobbies.SetTab('Gaming');"><li id = "liGaming">Gaming</li></a>
-					<a href = "javascript:Hobbies.SetTab('Movies');"><li id = "liMovies">Movies</li></a>
-				</ul>
+			<div class="portlet">
+				<div class="sidebar">
+					<ul class="nav-side">
+						<a href = "javascript:Hobbies.SetTab('Books');"><li class = "active" id = "liBooks">Reading</li></a>
+						<a href = "javascript:Hobbies.SetTab('Running');"><li id = "liRunning">Running</li></a>
+						<a href = "javascript:Hobbies.SetTab('Sports');"><li id = "liSports">Sports</li></a>
+						<a href = "javascript:Hobbies.SetTab('Gaming');"><li id = "liGaming">Gaming</li></a>
+						<a href = "javascript:Hobbies.SetTab('Movies');"><li id = "liMovies">Movies</li></a>
+					</ul>
+				</div>
 			</div>
-		</div>
 
-		<div class ="container">
-			<div id = "Home" class="content">
-				<div class="books" id = "divBooks">
-					<h1>Book Series</h1>
-					<h3>Summary</h3>
-					<p>
-						These are just a few of my favorite series. Yes, I am slightly a book nerd.
-					</p>
-					<div class="book">
-						<img src = "img/pj.jpg" alt = "Percy Jackson Series"/>
+			<div class ="container">
+				<div id = "Home" class="content">
+					<div class="books" id = "divBooks">
+						<h1>Book Series</h1>
+						<h3>Summary</h3>
+						<p>
+							These are just a few of my favorite series. Yes, I am slightly a book nerd.
+						</p>
+						<div class="book">
+							<img src = "img/pj.jpg" alt = "Percy Jackson Series"/>
+						</div>
+						<div class="book">
+							<img src = "img/Number4.jpg" alt = "I am Number 4 Series"/>
+						</div>
+						<div class="book">
+							<img src = "img/LostHero.jpg" alt = "The Lost Hero Series"/>
+						</div>
+						<div class="book">
+							<img src = "img/AlexRider.jpg" alt = "Alex Rider Series"/>
+						</div>
+						
+						<div class="book">
+							<img src = "img/YoungBond.jpg" alt = "Young Bond Series"/>
+						</div>
+						<div class="book">
+							<img src = "img/HungerGames.jpeg" alt = "Hunger Games Series"/>
+						</div>
+						<div class="book">
+							<img src = "img/DemonKing.png" alt = "The Demon King Series"/>
+						</div>
+						<div class="book">
+							<img src = "img/Rangers_Apprentice.jpg" alt = "Ranger's Apprentice Series"/>
+						</div>
+						<div class="book">
+							<img src = "img/mazerunner.jpg" alt = "Maze Runner Series"/>
+						</div>
+						<div class="book">
+							<img src = "img/pendragon.jpg" alt = "Pendragon Series"/>
+						</div>
 					</div>
-					<div class="book">
-						<img src = "img/Number4.jpg" alt = "I am Number 4 Series"/>
-					</div>
-					<div class="book">
-						<img src = "img/LostHero.jpg" alt = "The Lost Hero Series"/>
-					</div>
-					<div class="book">
-						<img src = "img/AlexRider.jpg" alt = "Alex Rider Series"/>
-					</div>
-					
-					<div class="book">
-						<img src = "img/YoungBond.jpg" alt = "Young Bond Series"/>
-					</div>
-					<div class="book">
-						<img src = "img/HungerGames.jpeg" alt = "Hunger Games Series"/>
-					</div>
-					<div class="book">
-						<img src = "img/DemonKing.png" alt = "The Demon King Series"/>
-					</div>
-					<div class="book">
-						<img src = "img/Rangers_Apprentice.jpg" alt = "Ranger's Apprentice Series"/>
-					</div>
-					<div class="book">
-						<img src = "img/mazerunner.jpg" alt = "Maze Runner Series"/>
-					</div>
-					<div class="book">
-						<img src = "img/pendragon.jpg" alt = "Pendragon Series"/>
-					</div>
-				</div>
-				<div class="books" id = "divRunning">
-					<h1>Running</h1>
-					<h3>Summary</h3>
-					<p>
-						I started running in 6th Grade for the Waterloo Junior High cross country team. My older brother, Josh,
-						was also on the team, so I joined along side my best friend, Lance. To this day, Josh, Lance, and I train
-						together for our respective college teams. Josh and I compete at Bellarmine and Lance competes at St. Louis University.
-					</p>
-					<h3>Running Squad</h3>
-					<p>
-						Outside of my college teammates and Lance, I also run with a couple friends from my high school (Weston and Will) and my high school coach (Coach Huffman).
-					</p>
-					<h3>More Running</h3>
-					<p>
-						<a href = "running.html"><span id = "spnRun">Click Here to check out more of my running on my Running page!</span></a>
-					</p>
+					<div class="books" id = "divRunning">
+						<h1>Running</h1>
+						<h3>Summary</h3>
+						<p>
+							I started running in 6th Grade for the Waterloo Junior High cross country team. My older brother, Josh,
+							was also on the team, so I joined along side my best friend, Lance. To this day, Josh, Lance, and I train
+							together for our respective college teams. Josh and I compete at Bellarmine and Lance competes at St. Louis University.
+						</p>
+						<h3>Running Squad</h3>
+						<p>
+							Outside of my college teammates and Lance, I also run with a couple friends from my high school (Weston and Will) and my high school coach (Coach Huffman).
+						</p>
+						<h3>More Running</h3>
+						<p>
+							<a href = "running.html"><span id = "spnRun">Click Here to check out more of my running on my Running page!</span></a>
+						</p>
 
+					</div>
+					<div class="books" id = "divSports">
+						<h1>Sports</h1>
+						<h3>Summary</h3>
+						<p>
+							Since the beginning of my life, I have been raised to love playing and watching sports. My parents both were
+							raised in sports, and my brothers and I have followed much the same path. Numerous family fights have been sparked from sports in the past!
+						</p>
+						<h3>Team Sports</h3>
+						<p>
+							Cross Country, Track and Field, Basketball, Baseball, and Soccer
+						</p>
+						<h3>"Backyard Sports"</h3>
+						<p>
+							Basketball, Wiffle Ball, Ping-Pong, Bowling, Soccer, Frisbee Golf, Golf, Frisbee, Tennis, Baseball, and Hockey
+						</p>
+						<h3>Favorite Professional Sports Teams</h3>
+						<div class="book">
+							<img src = "img/colts.png" alt = "Indianapolis Colts"/>
+						</div>
+						<div class="book">
+							<img src = "img/cardinals.jpg" alt = "St. Louis Cardinals"/>
+						</div>
+						<div class="book">
+							<img src = "img/blues.png" alt = "St. Louis Blues"/>
+						</div>
+						<div class="book">
+							<img src = "img/grizzlies.png" alt = "Memphis Grizzlies"/>
+						</div>
+					</div>
+					<div class="books" id = "divGaming">
+						<h1>Gaming</h1>
+						<h3>Summary</h3>
+						<p>
+							I have loved video games dating all the way back to the Nintendo 64. I have  with my brothers 
+							and friends my entire life. Gaming is one of the origins of my particular interest in technology.
+						</p>
+						<h3>Past/Current Consoles</h3>
+						<p>
+							Nintendo 64, Gamecube, Playstation 2, Wii, Xbox 360, and Xbox One
+						</p>
+						<h3>A Few Favorite Games</h3>
+						<div class="book">
+							<img src = "img/doubledash.jpg" alt = "Mario Kart Double Dash"/>
+						</div>
+						<div class="book">
+							<img src = "img/smashbros.jpg" alt = "Super Smash Bros Brawl"/>
+						</div>
+						<div class="book">
+							<img src = "img/mw2.png" alt = "Call of Duty: Modern Warfare 2"/>
+						</div>
+						<div class="book">
+							<img src = "img/clashroyale.jpg" alt = "Clash Royale"/>
+						</div>
+						<div class="book">
+							<img src = "img/nba.jpg" alt = "NBA 2K16"/>
+						</div>
+						<div class="book">
+							<img src = "img/GTA5.png" alt = "Grand Theft Auto 5"/>
+						</div>
+						<div class="book">
+							<img src = "img/Halo.jpg" alt = "Halo Reach"/>
+						</div>
+					</div>
+					<div class="books" id = "divMovies">
+						<h1>Movies</h1>
+						<h3>Summary</h3>
+						<p>
+							Let me just say that I probably go see around 20-25 movies in theaters every year. 
+						</p>
+						<p>
+							Don't ask me how many I watch outside of theaters...
+						</p>
+						<h3>Some of My Favorites</h3>
+						<div class="book">
+							<img src = "img/avengers.jpg" alt = "The Avengers"/>
+						</div>
+						<div class="book">
+							<img src = "img/bourne.jpg" alt = "The Bourne Trilogy"/>
+						</div>
+						<div class="book">
+							<img src = "img/Captain_America.jpg" alt = "Captain America Civil War"/>
+						</div>
+						<div class="book">
+							<img src = "img/darkknight.jpg" alt = "The Dark Knight"/>
+						</div>
+						<div class="book">
+							<img src = "img/die-hard.jpg" alt = "Die Hard"/>
+						</div>
+						<div class="book">
+							<img src = "img/goodfellas.jpg" alt = "Goodfellas"/>
+						</div>
+						<div class="book">
+							<img src = "img/Stepbrothers.jpg" alt = "Die Hard"/>
+						</div>
+						<div class="book">
+							<img src = "img/elf.jpg" alt = "Elf"/>
+						</div>
+					</div>
 				</div>
-				<div class="books" id = "divSports">
-					<h1>Sports</h1>
-					<h3>Summary</h3>
-					<p>
-						Since the beginning of my life, I have been raised to love playing and watching sports. My parents both were
-						raised in sports, and my brothers and I have followed much the same path.
-					</p>
-					<h3>Team Sports</h3>
-					<p>
-						Cross Country, Track and Field, Basketball, Baseball, and Soccer
-					</p>
-					<h3>"Backyard Sports"</h3>
-					<p>
-						Basketball, Wiffle Ball, Ping-Pong, Bowling, Soccer, Frisbee Golf, Golf, Frisbee, Tennis, Baseball, and Hockey
-					</p>
-					<h3>Favorite Professional Sports Teams</h3>
-					<div class="book">
-						<img src = "img/colts.png" alt = "Indianapolis Colts"/>
+			</div>
+			<div class = "pre-footer" id = "About">
+				<div class = "container">
+					<div class ="prefooter" >
+						<ul >
+							<h2>About</h2>
+							<li style = "display : list-item;">
+								Bellarmine University Student
+							</li>
+							<li style = "display : list-item;">
+								Computer Science Major
+							</li>
+							<li style = "display : list-item;">
+								Mathematics Minor
+							</li>
+							<li style = "display : list-item;">
+								Cross-country and Track Athlete
+							</li>
+						</ul>
 					</div>
-					<div class="book">
-						<img src = "img/cardinals.jpg" alt = "St. Louis Cardinals"/>
+					<div class ="prefooter prefooter2">
+	                    <h2>My Code</h2>
+	                    <a href = "https://github.com/CRodenberg">
+							<img src = "img/giticon.png" alt = "GitHub logo">
+						</a>
 					</div>
-					<div class="book">
-						<img src = "img/blues.png" alt = "St. Louis Blues"/>
+					<div class ="prefooter">
+						<h2>Follow Me On</h2>
+						<ul>
+							<li>
+								<a href = "https://twitter.com/ColeRodenberg">
+								<img src = "img/Twitter_icon.png" alt = "Twitter logo">
+								</a>
+							</li>
+							<li>
+								<a href = "https://www.facebook.com/cole.rodenberg">
+								<img src = "img/facebook.png" alt = "Facebook logo">
+								</a>
+							</li>
+							<li>
+								<a href = "https://plus.google.com/u/0/112469664185353105553/about">
+								<img src = "img/g+.png" alt = "Google+ logo">
+								</a>
+							</li>
+						</ul>
 					</div>
-					<div class="book">
-						<img src = "img/grizzlies.png" alt = "Memphis Grizzlies"/>
-					</div>
-				</div>
-				<div class="books" id = "divGaming">
-					<h1>Gaming</h1>
-					<h3>Summary</h3>
-					<p>
-						I have loved video games dating all the way back to the Nintendo 64. I have competitively played video games with my brothers 
-						over my entire life, and I most likely will continue to. Gaming is one of the origins of my particular interest in technology.
-					</p>
-					<h3>Past/Current Consoles</h3>
-					<p>
-						Nintendo 64, Gamecube, Playstation 2, Wii, Xbox 360, and Xbox One
-					</p>
-					<h3>A Few Favorite Games</h3>
-					<div class="book">
-						<img src = "img/doubledash.jpg" alt = "Mario Kart Double Dash"/>
-					</div>
-					<div class="book">
-						<img src = "img/smashbros.jpg" alt = "Super Smash Bros Brawl"/>
-					</div>
-					<div class="book">
-						<img src = "img/mw2.png" alt = "Call of Duty: Modern Warfare 2"/>
-					</div>
-					<div class="book">
-						<img src = "img/clashroyale.jpg" alt = "Clash Royale"/>
-					</div>
-					<div class="book">
-						<img src = "img/nba.jpg" alt = "NBA 2K16"/>
-					</div>
-					<div class="book">
-						<img src = "img/GTA5.png" alt = "Grand Theft Auto 5"/>
-					</div>
-					<div class="book">
-						<img src = "img/Halo.jpg" alt = "Halo Reach"/>
-					</div>
-				</div>
-				<div class="books" id = "divMovies">
-					<h1>Movies</h1>
-					<h3>Summary</h3>
-					<p>
-						Let me just say that I probably go see around 20-25 movies in theaters every year. 
-					</p>
-					<p>
-						Don't ask me how many I watch outside of theaters...
-					</p>
-					<h3>Some of My Favorites</h3>
-					<div class="book">
-						<img src = "img/avengers.jpg" alt = "The Avengers"/>
-					</div>
-					<div class="book">
-						<img src = "img/bourne.jpg" alt = "The Bourne Trilogy"/>
-					</div>
-					<div class="book">
-						<img src = "img/Captain_America.jpg" alt = "Captain America Civil War"/>
-					</div>
-					<div class="book">
-						<img src = "img/darkknight.jpg" alt = "The Dark Knight"/>
-					</div>
-					<div class="book">
-						<img src = "img/die-hard.jpg" alt = "Die Hard"/>
-					</div>
-					<div class="book">
-						<img src = "img/goodfellas.jpg" alt = "Goodfellas"/>
-					</div>
-					<div class="book">
-						<img src = "img/Stepbrothers.jpg" alt = "Die Hard"/>
-					</div>
-					<div class="book">
-						<img src = "img/elf.jpg" alt = "Elf"/>
+					<div class ="prefooter">
+						<h2>Contacts</h2>
+						<ul>
+							<li>
+								<a href = "mailto:crodenberg15@gmail.com">crodenberg15@gmail.com</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class = "pre-footer" id = "About">
-			<div class = "container">
-				<div class ="prefooter" >
-					<ul >
-						<h2>About</h2>
-						<li style = "display : list-item;">
-							Bellarmine University Student
-						</li>
-						<li style = "display : list-item;">
-							Computer Science Major
-						</li>
-						<li style = "display : list-item;">
-							Mathematics Minor
-						</li>
-						<li style = "display : list-item;">
-							Cross-country and Track Athlete
-						</li>
-					</ul>
-				</div>
-				<div class ="prefooter">
-					<!-- <h2>Share Contact</h2>
-					<input type="text" placeholder="mail@email.com" class="form-control">
-					<span class="input-group-btn">
-                        <button class="btn" type="submit">Submit</button>
-                    </span> -->
-                    <h2>My Code</h2>
-                    <a href = "https://github.com/CRodenberg">
-						<img src = "img/giticon.png" alt = "GitHub logo">
-					</a>
-				</div>
-				<div class ="prefooter">
-					<h2>Follow Me On</h2>
-					<ul>
-						<li>
-							<a href = "https://twitter.com/ColeRodenberg">
-							<img src = "img/Twitter_icon.png" alt = "Twitter logo">
-							</a>
-						</li>
-						<li>
-							<a href = "https://www.facebook.com/cole.rodenberg">
-							<img src = "img/facebook-box-blue.png" alt = "Facebook logo">
-							</a>
-						</li>
-						<li>
-							<a href = "https://plus.google.com/u/0/112469664185353105553/about">
-							<img src = "img/g+.png" alt = "Google+ logo">
-							</a>
-						</li>
-					</ul>
-				</div>
-				<div class ="prefooter">
-					<h2>Contacts</h2>
-					<ul>
-						<li>
-							<a href = "mailto:crodenberg15@gmail.com">crodenberg15@gmail.com</a>
-						</li>
-					</ul>
+			<div class = "footer">
+				<div style = "font-size: 17px; text-align: center;" class = "container">
+					Copyright @ ColeRodenberg.com 2016
 				</div>
 			</div>
+			<script src = "js/hobbies.js"></script>
 		</div>
-		<div class = "footer">
-			<div style = "font-size: 17px; text-align: center;" class = "container">
-				Copyright @ ColeRodenberg.com 2016
-			</div>
-		</div>
-		<script src = "js/hobbies.js"></script>
 	</body>
 
 

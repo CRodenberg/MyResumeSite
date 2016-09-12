@@ -1,16 +1,22 @@
 body {
     width: 100%;
-    margin: auto;
-    background-color: #e3e3e3;
+    margin: 0 auto;
+    background-color: #494C4D;
     font-family: "Helvetica";
-    min-width: 1536px;
+}
+#page-wrap{
+	background-color: #e3e3e3;
+	border: 2px solid black;
+	width: 990px;
+	margin: 0 auto;
 }
 p{
 	font-size: 17px;
 	
 }
 .profile{
-	padding-top: 30px;
+	padding-top: 10px;
+	height: 250px;
 }
 .profile ul li{
 	list-style: none;
@@ -19,6 +25,7 @@ p{
 .profile-title{
 	border-top: 3px solid black;
 	border-right: 3px solid black;
+	border-left: 3px solid black;
 	height: 80px;
 }
 .profile-title h1{
@@ -33,21 +40,30 @@ p{
 }
 .profile-summary{
 	border-top: 3px solid black;
-	padding: 30px;
+	padding: 20px 0 0 0;
+
+}
+.profile-wrapper{
+	float: left;
+	display: block;
+	width: 32%;
+	min-width: 320px;
 }
 .profile-headings{
 	float: left;
 	display: block;
-	width: 13%;
+	width: 115px;
 	font-size: 18px;
 	font-weight: bold;
+	margin-right: 5px;
 }
 .profile-headings ul{
-	padding-left:15px;
+	padding-left:5px;
 }
 .profile-contents{
 	display: block;
 	width: 25%;
+	min-width: 200px;
 	float:left;
 	font-size: 18px;
 }
@@ -84,10 +100,11 @@ p{
 	width: 250px;
 	height: 312px;
 	border: 3px solid black;
+	margin-left: 10px;
 }
 .running-contents{
 	float:left;
-	width: 800px;
+	width: 500px;
 }
 .running-contents h1{
 	text-align: center;
@@ -110,7 +127,7 @@ p{
 }
 .code-profile img{
 	float: left;
-	height: 260px;
+	height: 200px;
 	margin-left: 40px;
 	border: 3px solid black;
 }
@@ -121,6 +138,8 @@ p{
 	float:left;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	width: 700px;
+	margin-left: 20px;
 }
 .books img{
 	height: 150px;
@@ -128,9 +147,6 @@ p{
 }
 .books h1{
 	text-align: center;
-}
-#book1{
-	margin-left: 25px;
 }
 .book{
 	float:left;
@@ -150,7 +166,8 @@ p{
 	float:left;
 	padding-top: 15px;
 	padding-bottom: 20px;
-	width: 100%;
+	width: 700px;
+	margin-left: 30px;
 }
 .class-section h1{
 	text-align: center;
@@ -186,7 +203,7 @@ p{
 	float:left;
 	padding-top: 15px;
 	padding-bottom: 20px;
-	width: 100%;
+	width: 700px;
 }
 .internship-section h1{
 	text-align: center;
@@ -209,13 +226,13 @@ p{
 	/*border-left: 3px solid black;
 	border-bottom: 3px solid black;*/
 	float:left;
-	width: 800px;
+	width: 400px;
 	margin-left: 20px;
 	margin-bottom: 20px;
 	height: 100px;
 }
 .intern-info{
-	width: 1073px;
+	width: 700px;
 	float:left;
 	/*border-right: 3px solid black;
 	border-left: 3px solid black;
@@ -226,7 +243,6 @@ p{
 .info-section{
 	width:30%;
 	float:left;
-	margin-left: 30px;
 }
 .info-section h3{
 	margin-bottom: 0;
@@ -235,36 +251,6 @@ p{
 	list-style-type: square;
 	margin-top: 5px;
 	padding-left: 20px;
-}
-article{
-	width: 600px;
-	margin: 20px auto;
-
-}
-article img{
-	float: left;
-	margin-right: 30px;
-	width: 140px;
-	height: 140px;
-}
-article .continue{
-	float: right;
-
-}
-article a{
-	color: #276056;
-}
-article a:hover{
-	color: black;
-}
-article h2{
-	margin-top: 0;
-	margin-bottom: 0;
-	font-size: 30px
-	
-}
-.articles{
-	padding-top: 20px;
 }
 .continue:after{
 	content: ')';
@@ -317,7 +303,7 @@ iframe{
 	clear:both;
 }
 .container{
-	width: 1120px;
+	width: 920px;
 	margin-right: auto;
 	margin-left: auto;
 	padding-left: 15px;
@@ -370,15 +356,10 @@ iframe{
 .header{
 	background: #029fff;
 	width: 100%;
+	max-width: 990px;
 	top: 0;
 	position: fixed;
-	border-color: black;
-    border-style:solid;
-    border-width: 5px;
-    border-left-color: #029fff;
-    border-right-color: #029fff;
-    border-top-color: #029fff;
-    margin-left:-7px;
+    border-bottom: 3px solid black;
 }
 .logo{
 	float: left;
@@ -387,10 +368,12 @@ iframe{
 }
 .logo h1{
 	text-shadow: 3px 3px 5px black;
+	margin-bottom: 0;
 }
 .nav{
 	float: right;
 	font-size: 17px;
+	width: 600px;
 }
 .content{
 	padding-top:70px;
@@ -404,6 +387,7 @@ iframe{
 }
 ul#menu{
 	padding: 0;
+	margin-bottom: 5px;
 }
 
 #menu a li:hover{
@@ -421,6 +405,7 @@ ul#menu li{
 	list-style: none;
 	float: left;
 	margin-left: 15px;
+	margin-top:5px;
 	padding-top: 15px;
 	display:inline;
 }
@@ -451,21 +436,19 @@ textarea{
 .pre-footer{
 	background: #595959;
 	margin-top: 200px;
-	padding:17px;
+	padding:17px 10px;
 	clear: both;
 	border-top-style: solid;
 	border-top-width: 5px;
 	border-top-color: black;
-	height: 170px;
-	width:100%;
+	height: 200px;
+	max-width: 990px;
 }
 .prefooter{
-	width: 24%;
+	width: 25%;
+	min-width: 175px;
 	float:left;
 	position: relative;
-	min-height: 1px;
-	/*border-right: solid 1px black;*/
-
 }
 .prefooter ul{
 	padding-left:0;
@@ -479,6 +462,10 @@ textarea{
 .prefooter img{
 	width: 50px;
 	height: 50px;
+}
+.prefooter2{
+	margin-left: 20px;
+	margin-right: -20px;
 }
 .btn{
 	color: #fff;
@@ -527,7 +514,7 @@ textarea{
 	color:white;
 	padding: 17px;
 	font-size: 13px;
-	width: 100%;
+	max-width: 990px;
 	margin-top: 0;
 	border-top-style: solid;
 	border-top-width: 5px;
