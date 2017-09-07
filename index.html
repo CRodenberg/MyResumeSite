@@ -1,212 +1,163 @@
 <!DOCTYPE html>
-<html lang = "en">
-	<head>
-		<title>Cole's Site</title>
-		<meta charset = "utf-8">
-		<!--<link rel="icon" href="/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="css/reset.css">-->
-		<meta name = "viewport" content ="width = device-width" content = "initial-scale-1">
-		<meta name = "author" content = "Cole Rodenberg">
-		<meta name = "description" content = "Cole Rodenberg's self-built resume site">
-		<meta name = "keywords" content = "Cole, Rodenberg, Cole Rodenberg"> 
-		<link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
-		<script src="js/jquery-3.1.0.min.js"></script>
-		<link rel="stylesheet" type="text/css" media="all" href="css/style.css">
-		<link rel="stylesheet" type="text/css" media="only screen and (min-width:768px) and
-  			(max-width:980px)" href="css/style_768.css">
-  		<link rel="stylesheet" type="text/css" media="only screen and (min-width:600px) and
-  			(max-width:767px)" href="css/style_600.css">
-  		<link rel="stylesheet" type="text/css" media="only screen and (min-width:300px) and
-  			(max-width:599px)" href="css/style_300.css">
-	</head>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Cole Rodenberg</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name = "author" content = "Cole Rodenberg">
+  <meta name = "description" content = "Cole Rodenberg's portfolio site built with the Bootstrap framework."> 
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon'/ >
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
 
-	<body>
-		<div id="page-wrap">
-			<div class = "header">
-				<div class="container">
-					<div class="logo">
-						<h1><a id = "logoA" href = "#">Cole Rodenberg</a></h1>
-					</div>
-					<div class = "nav">
-						<ul id = "menu">
-							<a href = "#"><li class = "active">Home</li></a>
-							<a href = "academics.html"><li>Academics</li></a>
-							<a href = "code.html"><li>Code</li></a>
-							<a href = "running.html"><li>Running</li></a>
-							<a href = "hobbies.html"><li>Hobbies</li></a>
-						</ul>
-					</div>
-				</div>
-			</div>
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>    
+        <span class="icon-bar"></span>                    
+      </button>
+      <a class="navbar-brand" href="#">Cole Rodenberg</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#MeetMe">MEET ME</a></li>
+        <li><a href="#Education">EDUCATION</a></li>
+        <li><a href="#Experience">EXPERIENCE</a></li>
+        <li><a href="#Hobbies">HOBBIES</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-			<div class ="container">
-				<div id = "Home" class="content">
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin" id="MeetMe">Meet Me</h3>
+  <img src="img/ProfilePicture.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Cole Picture" width="350" height="350">
+  <h3>Coder | Content Creator | Runner | Student</h3>
+  <ul class="list-unstyled">
+	<li><span class="label label-success">As a programmer,</span> I have worked a few internships, developed personal projects, and am actively trying to learn new skills in the industry.</li>
+  	<li><span class="label label-success">As a content creator,</span> I mess with a variety of content to fulfill my entrepreneurial spirit.</li>
+  	<li><span class="label label-success">As a runner,</span> I run close to 80 miles a week to compete at the NCAA level in Track/Cross Country.</li>
+  	<li><span class="label label-success">As a student,</span> I am majoring in Computer Science and Minoring in Mathematics at Bellarmine University.</li>
+  	<li><span class="label label-info">Contact Me:</span><a style = "color: white; font-weight: bold;" href = "mailto:crodenberg15@gmail.com"> crodenberg15@gmail.com</a></li>
+  </ul>
+</div>
 
-						<div class="profile">
-							<div class="profile-title">
-								<h1>Meeting Me</h1>
-							</div>
-							<div class="profile-pic">
-								<img src="img/grad-pic.jpg" alt = "Cole giving his graduation speech." />
-							</div>
-							
-							<div class="profile-summary">
-								<div class="profile-wrapper">
-									<div class = "profile-headings">
-										<ul>
-											<li>
-												College:
-											</li>
-											<li>
-												Year:
-											</li>
-											<li>
-												GPA:
-											</li>
-											<li>
-												Birthdate: 
-											</li>
-											<li>
-												Resume:
-											</li>
-											<li>
-												Computer Languages:
-											</li>
-										</ul>
-									</div>
-									<div class = "profile-contents">
-										<ul>
-											<li>
-												Bellarmine University
-											</li>
-											<li>
-												Junior
-											</li>
-											<li>
-												3.99
-											</li>
-											<li>
-												06/20/1996
-											</li>
-											<li>
-												<a href = "CollegeResume.pdf" style = "color: #009bff; font-weight: bold;">
-													Click Here to view
-												</a>
-											</li>
-											<li>
-												Java, JavaScript, jQuery, PHP, mySQL, HTML, CSS 
-											</li>
-										</ul>
-									</div>
-								</div>
-								<div class="profile-wrapper profile-wrapper2">
-									<div class = "profile-headings">
-										<ul>
-											<li>
-												Major:
-											</li>
-											<li>
-												Minor:
-											</li>
-											<li>
-												Expected Graduation:
-											</li>
-											<li>
-												Past Internship: 
-											</li>
-											<li>
-												College Sports:
-											</li>
-										</ul>
-									</div>
-									<div class = "profile-contents">
-										<ul>
-											<li>
-												Computer Science
-											</li>
-											<li>
-												Mathematics
-											</li>
-											<li>
-												<br/>
-												May of 2019
-											</li>
-											<li class = "liInternship">
-												New Balance Web Developer
-											</li>
-											<li class = "liSports">
-												Cross Country and Track
-											</li>
-										</ul>
-									</div>
-								</div>	
-							</div>
-						</div>
-				</div>
-			</div>
-			<div class = "pre-footer" id = "About">
-				<div class = "container">
-					<div class ="prefooter" >
-						<ul >
-							<h2>About</h2>
-							<li style = "display : list-item;">
-								Bellarmine University Student
-							</li>
-							<li style = "display : list-item;">
-								Computer Science Major
-							</li>
-							<li style = "display : list-item;">
-								Mathematics Minor
-							</li>
-							<li style = "display : list-item;">
-								Cross-Country and Track Athlete
-							</li>
-						</ul>
-					</div>
-					<div class ="prefooter prefooter2">
-	                    <h2>My Code</h2>
-	                    <a href = "https://github.com/CRodenberg">
-							<img src = "img/giticon.png" alt = "GitHub logo">
-						</a>
-					</div>
-					<div class ="prefooter prefooter3">
-						<h2>Follow Me On</h2>
-						<ul>
-							<li>
-								<a href = "https://twitter.com/ColeRodenberg">
-								<img src = "img/Twitter_icon.png" alt = "Twitter logo">
-								</a>
-							</li>
-							<li>
-								<a href = "https://www.facebook.com/cole.rodenberg">
-								<img src = "img/facebook.png" alt = "Facebook logo">
-								</a>
-							</li>
-							<li>
-								<a href = "https://plus.google.com/u/0/112469664185353105553/about">
-								<img src = "img/g+.png" alt = "Google+ logo">
-								</a>
-							</li>
-						</ul>
-					</div>
-					<div class ="prefooter prefooter4">
-						<h2>Contacts</h2>
-						<ul>
-							<li>
-								<a href = "mailto:crodenberg15@gmail.com">crodenberg15@gmail.com</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class = "footer">
-				<div style = "font-size: 17px; text-align: center;" class = "container footer-font">
-					Copyright @ ColeRodenberg.com 2017
-				</div>
-			</div>
-		</div>
-		
-	</body>
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center">
+  <h3 class="margin" id="Education">Education | Coding</h3>
+  <table class="table">
+    <tbody>
+      <tr>
+        <td>College:</td>
+        <td>Bellarmine University</td>
+      </tr>
+      <tr>
+        <td>Major - Minor:</td>
+        <td>Computer Science - Mathematics</td>
+      </tr>
+      <tr>
+        <td>GPA:</td>
+        <td>3.99</td>
+      </tr>
+      <tr>
+        <td>Expected Graduation:</td>
+        <td>December 2018</td>
+      </tr>
+      <tr>
+        <td>Object-Oriented Languages:</td>
+        <td>Java, JavaScript</td>
+      </tr>
+      <tr>
+        <td>Others:</td>
+        <td>PHP, mySQL, jQuery, HTML, CSS</td>
+      </tr>
+      <tr>
+        <td>GitHub:</td>
+        <td><a href = "https://www.github.com/CRodenberg" style = "color: #009bff; font-weight: bold;">Cole's Account</a></td>
+      </tr>
+      <tr>
+        <td>Resume:</td>
+        <td><a href = "CollegeResume.pdf" style = "color: #009bff; font-weight: bold;">Cole's Resume</a>
+		</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center">    
+  <h3 class="margin" id="Experience">Where Have I Worked?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+    	<h3>Simplicity Software Intern</h3>
+    	<img src="img/Simplicity.png" class="img-responsive margin" style="margin: 0 auto;" alt="Image">
+      <ul class="list-unstyled">
+	  	<li><span class="label label-info">Developed</span> with GitHub using JS, HTML, and CSS</li>
+	  	<li><span class="label label-info">Debugged</span> websites and learned basic programming skills</li>
+	  </ul>
+    </div>
+    <div class="col-sm-4"> 
+    	<h3>Simplicity Software Junior Developer</h3>
+        <img src="img/Simplicity.png" class="img-responsive margin" style="margin: 0 auto;" alt="Image">
+      <ul class="list-unstyled">
+	  	<li><span class="label label-info">Built</span> a website template for the company that included notifications, messages, users, and more using PHP, JavaScript, HTML, mySQL and CSS</li>
+	  	<li><span class="label label-info">Created</span> an API to communicate consumer statistics between server and database</li>
+	  	<li><span class="label label-info">Devloped/Debugged</span> multiple websites</li>
+	  </ul>
+    </div>
+    <div class="col-sm-4"> 
+    	<h3>New Balance Web Developer Intern</h3>
+    	<img src="img/newbalance_logo.png" class="img-responsive margin" style="margin: 0 auto;" alt="Image">
+      <ul class="list-unstyled">
+	  	<li><span class="label label-info">Developed</span> cutting edge communications channel to allow DTC contact</li>
+	  	<li><span class="label label-info">Cut</span> down user time to reach product pages on site</li>
+	  	<li><span class="label label-info">Used</span> user generated content to enhance reviews and increase conversion rate by 13%</li>
+	  </ul>
+     
+    </div>
+  </div>
+</div>
+	<div class="container-fluid text-center bg-2">
+	  <h3 class="margin" id="Hobbies">Hobbies</h3>
+	  <h4>Where I spend my time</h4>
+	  <div class="row text-center">
+	    <div class="col-sm-3">
+	    	<img src="img/CodingHobbies.jpg" class="img-thumbnail" alt="Cole's Coding Hobbies">
+	        <p><strong>Coding</strong></p>
+	        <p>Coding is not just a career.</p>
+	    </div>
+	    <div class="col-sm-3">
+	    	<img src="img/RunningMeet.jpg" class="img-thumbnail" alt="Cross Country Race">
+	        <p><strong>Running</strong></p>
+	        <p>I run Track and Cross Country at Bellarmine.</p>
+	    </div>
+	    <div class="col-sm-3">
+	    	<img src="img/TopGames.jpg" class="img-thumbnail" alt="Top Games Cole Plays">
+	        <p><strong>Gaming</strong></p>
+	        <p>Gaming turned me towards coding.</p>
+	    </div>
+	    <div class="col-sm-3">
+	    	<img src="img/ColeEvan.jpg" class="img-thumbnail" alt="Cole and Evan">
+	        <p><strong>Friends/Family</strong></p>
+	        <p>Always have time for the people who matter.</p>
+	    </div>
+	</div>
+</div>
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+ 	Copyright @ColeRodenberg 2017
+</footer>
 
+</body>
 </html>
